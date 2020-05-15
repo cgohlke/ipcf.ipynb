@@ -1,0 +1,17 @@
+jupyter
+ipython
+ipywidgets
+widgetsnbextension
+notebook
+numpy
+scipy
+matplotlib
+scikit-image
+dask
+numba
+cupy
+h5py
+Cython
+pandas
+psutil
+tifffile
