@@ -1,3 +1,5 @@
+*.html linguist-detectable=false
+*.htm inguist-detectable=false
 *.cmd
 *.bin
 *.zip
