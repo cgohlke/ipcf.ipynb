@@ -4,6 +4,8 @@
 
 by [Christoph Gohlke](https://www.lfd.uci.edu/~gohlke/), Laboratory for Fluorescence Dynamics, University of California, Irvine
 
+Updated on March 10, 2021
+
 Presented at the [Big Data Image Processing & Analysis](http://bigdipa.ccbs.uci.edu/) BigDIPA workshops 2016, 2017, and 2018
 
 Supported by the National Institute of Health grant numbers 1R25EB022366-01 and 2P41GM103540-31
@@ -49,12 +51,23 @@ To follow this tutorial and run its code, the following prerequisites are needed
 #### Python development environment
 
 * CPython 3.8 64-bit with development header files and libraries
-* Python packages: Jupyter, IPython, numpy, scipy, matplotlib, scikit-image, h5py, Cython, CuPy, dask, and numba
-* CUDA Toolkit 10.1
+* Python packages: Jupyter, IPython, numpy, scipy, matplotlib, scikit-image, h5py, Cython, dask, numba, and CuPy (optional)
+* CUDA Toolkit (optional, used for CuPy)
 * A Python distutils compatible C compiler with OpenMP support: Visual Studio 2019 or gcc
 
 #### Tutorial source code and data files
 
-* Clone the source code from the [ipcf.ipynb](https://github.com/cgohlke/ipcf.ipynb) repository to a working directory
-* Extract the example data files from the [Simulation_Channel.bin.zip](https://drive.google.com/open?id=1cQZezCCvjdmBsUAju7lbhRVLLpwgA6vx) and [nih3t3-egfp_2.zip](https://drive.google.com/open?id=15KvCU6ntCdBmq6j1QwDZRRFB8uf9wh0V) archives to the working directory
-* Open the `ipcf.ipynb` notebook from within the working directory
+* Clone the source code from the [ipcf.ipynb](https://github.com/cgohlke/ipcf.ipynb) repository to a working directory:
+
+      git clone https://github.com/cgohlke/ipcf.ipynb
+
+* Extract the example data files from the [Simulation_Channel.bin.zip](https://drive.google.com/open?id=1cQZezCCvjdmBsUAju7lbhRVLLpwgA6vx) and [nih3t3-egfp_2.zip](https://drive.google.com/open?id=15KvCU6ntCdBmq6j1QwDZRRFB8uf9wh0V) archives to the ipcf.ipynb directory:
+
+      unzip Simulation_Channel.bin.zip -d ipcf.ipynb
+      unzip nih3t3-egfp_2.zip -d ipcf.ipynb
+
+* Open the `ipcf.ipynb` notebook from within the ipcf.ipynb directory, e.g. using locally installed jupyter or a docker image, e.g.:
+
+      jupyter-nbclassic ipcf.ipynb
+      
+      docker run --rm -p 8888:8888 -v ${PWD}/ipcf.ipynb:/home/jovyan/work/ipcf.ipynb jupyter/scipy-notebook:d990a62010ae
