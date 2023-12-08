@@ -2,9 +2,9 @@
 
 **A tutorial using Python and scientific libraries to implement pair correlation function (pCF) analysis of a big time series of images from fluorescence microscopy on a personal computer.**
 
-by [Christoph Gohlke](https://www.lfd.uci.edu/~gohlke/), Laboratory for Fluorescence Dynamics, University of California, Irvine
+by [Christoph Gohlke](https://www.cgohlke.com)
 
-Updated on March 10, 2021
+Updated on December 8, 2023
 
 Presented at the [Big Data Image Processing & Analysis](http://bigdipa.ccbs.uci.edu/) BigDIPA workshops 2016, 2017, and 2018
 
@@ -34,8 +34,8 @@ To follow this tutorial and run its code, the following prerequisites are needed
 
 #### Familiarity with
 
-* pair correlation function analysis of fluorescence fluctuations (e.g. Gratton and Digman lectures)
-* programming and nD-array computing (e.g. Matlab, numpy)
+* pair correlation function analysis of fluorescence fluctuations (for example Gratton and Digman lectures)
+* programming and nD-array computing (for example Matlab, numpy)
 * signal processing, time and frequency domain
 
 #### Minimum computer specifications
@@ -45,15 +45,15 @@ To follow this tutorial and run its code, the following prerequisites are needed
 * 8 GB RAM
 * SSD drive with 50 GB free space
 * NVIDIA GPU with CUDA drivers
-* A modern web browser supporting WebSockets
+* Web browser supporting WebSockets
 * Disabled on-access antivirus scanning for the working and scratch directories
 
 #### Python development environment
 
-* CPython 3.8 64-bit with development header files and libraries
+* CPython 3.11 64-bit with development header files and libraries
 * Python packages: Jupyter, IPython, numpy, scipy, matplotlib, scikit-image, h5py, Cython, dask, numba, and CuPy (optional)
 * CUDA Toolkit (optional, used for CuPy)
-* A Python distutils compatible C compiler with OpenMP support: Visual Studio 2019 or gcc
+* A Python distutils compatible C compiler with OpenMP support: Visual Studio 2022 or gcc
 
 #### Tutorial source code and data files
 
@@ -61,13 +61,14 @@ To follow this tutorial and run its code, the following prerequisites are needed
 
       git clone https://github.com/cgohlke/ipcf.ipynb
 
-* Extract the example data files from the [Simulation_Channel.bin.zip](https://drive.google.com/open?id=1cQZezCCvjdmBsUAju7lbhRVLLpwgA6vx) and [nih3t3-egfp_2.zip](https://drive.google.com/open?id=15KvCU6ntCdBmq6j1QwDZRRFB8uf9wh0V) archives to the ipcf.ipynb directory:
+* Download and extract the following files from the [Zenodo record](https://zenodo.org/records/10289676) to the ipcf.ipynb directory:
 
-      unzip Simulation_Channel.bin.zip -d ipcf.ipynb
-      unzip nih3t3-egfp_2.zip -d ipcf.ipynb
+      Simulation_Channel.bin
+      Simulation_Channel.ipcf.bin
+      nih3t3-egfp_2.zip
 
-* Open the `ipcf.ipynb` notebook from within the ipcf.ipynb directory, e.g. using locally installed jupyter or a docker image, e.g.:
+* Open the `ipcf.ipynb` notebook from within the ipcf.ipynb directory, for example, using locally installed jupyter or a docker image:
 
-      jupyter-nbclassic ipcf.ipynb
+      jupyter-lab ipcf.ipynb
       
-      docker run --rm -p 8888:8888 -v ${PWD}/ipcf.ipynb:/home/jovyan/work/ipcf.ipynb jupyter/scipy-notebook:d990a62010ae
+      docker run --rm -p 8888:8888 -v ${PWD}/ipcf.ipynb:/home/jovyan/work/ipcf.ipynb jupyter/scipy-notebook:python-3.11
