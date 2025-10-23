@@ -9,6 +9,7 @@ matplotlib
 scikit-image
 dask
 numba
+numba-cuda
 cupy
 h5py
 Cython
