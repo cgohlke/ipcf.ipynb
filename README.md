@@ -4,7 +4,7 @@
 
 by [Christoph Gohlke](https://www.cgohlke.com)
 
-Updated on December 8, 2023
+Published November 1, 2016. Last updated December 16, 2025
 
 Presented at the [Big Data Image Processing & Analysis](http://bigdipa.ccbs.uci.edu/) BigDIPA workshops 2016, 2017, and 2018
 
@@ -40,7 +40,7 @@ To follow this tutorial and run its code, the following prerequisites are needed
 
 #### Minimum computer specifications
 
-* 64-bit Windows 10, macOS, or Linux based operating system
+* 64-bit Windows 11, macOS, or Linux based operating system
 * Core i5 CPU with 4 cores
 * 8 GB RAM
 * SSD drive with 50 GB free space
@@ -50,9 +50,9 @@ To follow this tutorial and run its code, the following prerequisites are needed
 
 #### Python development environment
 
-* CPython 3.11 64-bit with development header files and libraries
-* Python packages: Jupyter, IPython, numpy, scipy, matplotlib, scikit-image, h5py, Cython, dask, numba, and CuPy (optional)
-* CUDA Toolkit (optional, used for CuPy)
+* CPython 3.13 64-bit with development header files and libraries
+* Python packages: Jupyter, IPython, numpy, scipy, matplotlib, scikit-image, h5py, Cython, dask, numba, numba-cuda, and CuPy (optional)
+* CUDA Toolkit (optional, used for CuPy and numba-cuda)
 * A Python distutils compatible C compiler with OpenMP support: Visual Studio 2022 or gcc
 
 #### Tutorial source code and data files
@@ -70,5 +70,5 @@ To follow this tutorial and run its code, the following prerequisites are needed
 * Open the `ipcf.ipynb` notebook from within the ipcf.ipynb directory, for example, using locally installed jupyter or a docker image:
 
       jupyter-lab ipcf.ipynb
-      
-      docker run --rm -p 8888:8888 -v ${PWD}/ipcf.ipynb:/home/jovyan/work/ipcf.ipynb jupyter/scipy-notebook:python-3.11
+
+      docker run --rm -p 8888:8888 -v ${PWD}/ipcf.ipynb:/home/jovyan/work/ipcf.ipynb jupyter/scipy-notebook:python-3.13

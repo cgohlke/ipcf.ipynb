@@ -1,6 +1,6 @@
 /* fft2d.h
 
-Header file for the `fft2d library by Takuya Ooura 
+Header file for the `fft2d library by Takuya Ooura
 <http://www.kurims.kyoto-u.ac.jp/~ooura/fft.html>`_.
 
 */
