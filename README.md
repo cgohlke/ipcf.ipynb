@@ -4,13 +4,15 @@
 
 by [Christoph Gohlke](https://www.cgohlke.com)
 
-Published November 1, 2016. Last updated December 16, 2025
+Published November 1, 2016. Last updated February 25, 2026
 
 Presented at the [Big Data Image Processing & Analysis](http://bigdipa.ccbs.uci.edu/) BigDIPA workshops 2016, 2017, and 2018
 
 Supported by the National Institute of Health grant numbers 1R25EB022366-01 and 2P41GM103540-31
 
 Released under the creative commons [Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) license
+
+Source code is available on [GitHub](https://github.com/cgohlke/ipcf.ipynb)
 
 ## Abstract
 
@@ -50,10 +52,10 @@ To follow this tutorial and run its code, the following prerequisites are needed
 
 #### Python development environment
 
-* CPython 3.13 64-bit with development header files and libraries
-* Python packages: Jupyter, IPython, numpy, scipy, matplotlib, scikit-image, h5py, Cython, dask, numba, numba-cuda, and CuPy (optional)
+* CPython 3.11-3.14 64-bit with development header files and libraries
+* Python packages: Jupyter, IPython, setuptools, numpy, scipy, matplotlib, scikit-image, h5py, Cython, dask, numba, numba-cuda, and CuPy (optional)
 * CUDA Toolkit (optional, used for CuPy and numba-cuda)
-* A Python distutils compatible C compiler with OpenMP support: Visual Studio 2022 or gcc
+* A Python setuptools compatible C compiler with OpenMP support: Visual Studio 2022 or gcc
 
 #### Tutorial source code and data files
 

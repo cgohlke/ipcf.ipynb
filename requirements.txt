@@ -1,18 +1,21 @@
-jupyter
+Cython
+dask
+h5py
 ipython
 ipywidgets
-widgetsnbextension
+jupyter
+matplotlib
 notebook
 numpy
-scipy
-matplotlib
-scikit-image
-dask
 numba
-numba-cuda
-cupy
-h5py
-Cython
 pandas
 psutil
+scikit-image
+scipy
+setuptools
 tifffile
+widgetsnbextension
+
+# Optional: install the variant matching system's CUDA version
+# cupy-cuda12x
+# numba-cuda
